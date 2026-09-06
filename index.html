@@ -3,7 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HeRama PSoftwares | Official Page</title>
+
+  <!-- === SEO / GOOGLE SEARCH METADATA === -->
+  <meta name="description" content="HeRama Softwares — official website for software, web apps, mobile apps, coding tools, document converters and image editing solutions.">
+  <meta name="keywords" content="HeRama, HeRama Softwares, HeRama Software, HeRama PSoftwares, software developer, web apps, mobile apps, coding tools, document converter, image editor">
+  <meta name="author" content="HeRama Softwares">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://heramasoftware.github.io/HeRama/">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HeRama Softwares | Official Website">
+  <meta property="og:description" content="Official website of HeRama Softwares — software, web apps, mobile apps and digital tools.">
+  <meta property="og:url" content="https://heramasoftware.github.io/HeRama/">
+  <meta property="og:image" content="https://heramasoftware.github.io/HeRama/herama.jpeg">
+  <meta property="og:site_name" content="HeRama Softwares">
+
+  <!-- Twitter/X Sharing -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HeRama Softwares | Official Website">
+  <meta name="twitter:description" content="Official website of HeRama Softwares — software, web apps, mobile apps and digital tools.">
+  <meta name="twitter:image" content="https://heramasoftware.github.io/HeRama/herama.jpeg">
+
+  <!-- Structured data helps Google understand the brand/site -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "HeRama Softwares",
+    "alternateName": ["HeRama", "HeRama Software", "HeRama PSoftwares"],
+    "url": "https://heramasoftware.github.io/HeRama/",
+    "logo": "https://heramasoftware.github.io/HeRama/herama.jpeg",
+    "email": "heramasoftwares@gmail.com",
+    "description": "HeRama Softwares develops software, web applications, mobile applications and digital tools.",
+    "sameAs": [
+      "https://www.facebook.com/share/1HQvqGAFDk/",
+      "https://www.instagram.com/herama_psoftwares?igsh=MXFvZWMyYWdleDJ3ZA==",
+      "https://youtube.com/@vishalgaradsoftwaredevloper?si=EUK5Th2-3GdsYp0a"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "HeRama Softwares",
+    "alternateName": "HeRama",
+    "url": "https://heramasoftware.github.io/HeRama/"
+  }
+  </script>
+
+  <title>HeRama Softwares | Apps, Web & Software</title>
   
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -290,6 +341,41 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
+
+    /* === COMPANY INFORMATION === */
+    .company-info-section { margin-bottom: 35px; }
+    .company-info-card {
+      background: var(--card-glass);
+      border: 2px solid var(--accent-green);
+      border-radius: 18px;
+      padding: 24px;
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      box-shadow: 0 0 20px rgba(0, 255, 136, 0.15);
+      text-align: center;
+    }
+    .company-info-card p {
+      margin: 0 0 12px 0;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    .company-info-card strong { color: white; }
+    .company-keywords {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 9px;
+      margin-top: 18px;
+    }
+    .company-keywords span {
+      border: 1px solid var(--accent-cyan);
+      border-radius: 20px;
+      padding: 5px 12px;
+      color: var(--accent-cyan);
+      font-size: 12px;
+      font-weight: 600;
+    }
+
     @media (max-width: 600px) {
       .profile-card { flex-direction: column; text-align: center; }
       .profile-info i { display: none; }
@@ -330,6 +416,23 @@
         <p><i class="fa-solid fa-location-dot"></i> Hydrbad, Maharashtra, India</p>
       </div>
     </div>
+
+
+    <!-- === COMPANY INFORMATION / SEO CONTENT === -->
+    <section class="company-info-section" aria-label="About HeRama Softwares">
+      <h2 class="section-title">About HeRama Softwares</h2>
+      <div class="company-info-card">
+        <p><strong>HeRama Softwares</strong> is a software and digital tools brand focused on building useful web applications, mobile applications and developer-focused tools.</p>
+        <p>Explore our software and apps for coding practice, document conversion, image editing and other digital workflows. This is the official HeRama Softwares website.</p>
+        <div class="company-keywords">
+          <span>HeRama</span>
+          <span>HeRama Softwares</span>
+          <span>Web Apps</span>
+          <span>Mobile Apps</span>
+          <span>Software</span>
+        </div>
+      </div>
+    </section>
 
     <!-- Software & Apps Section -->
     <h2 class="section-title">Softwares & Apps, Webs</h2>
