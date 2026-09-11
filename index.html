@@ -61,7 +61,7 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css?v=20260910-team">
+  <link rel="stylesheet" href="style.css?v=20260911-products">
 </head>
 <body>
 
@@ -93,7 +93,8 @@
     <nav class="section-nav" aria-label="Page sections">
       <a href="#team"><i class="fa-solid fa-users"></i><span>Team</span></a>
       <a href="#about"><i class="fa-solid fa-circle-info"></i><span>About</span></a>
-      <a href="#apps"><i class="fa-solid fa-layer-group"></i><span>Apps</span></a>
+      <a href="#webs"><i class="fa-solid fa-globe"></i><span>Webs</span></a>
+      <a href="#apps"><i class="fa-solid fa-mobile-screen-button"></i><span>Apps</span></a>
       <a href="#contact"><i class="fa-solid fa-envelope"></i><span>Contact</span></a>
     </nav>
 
@@ -126,7 +127,7 @@
 
       <div class="team-glass-box">
         <!-- OWNER / LEAD DEVELOPER: replace owner.jpeg, name and text anytime -->
-        <div class="team-owner team-reveal">
+        <div class="team-owner owner-feature scroll-reveal">
           <div class="team-photo owner-photo">
             <img src="owner.jpeg" alt="HeRama Softwares Owner & Lead Developer">
           </div>
@@ -139,7 +140,7 @@
 
         <div class="team-members-grid">
           <!-- TEAM MEMBER 1 -->
-          <article class="team-member team-reveal">
+          <article class="team-member scroll-reveal">
             <div class="team-photo"><img src="inginears.jpeg" alt="Team Member 1"></div>
             <h3>Rajendra Varma</h3>
             <span class="team-role">Technical Head</span>
@@ -174,57 +175,138 @@
       
     </section>
 
+
         <hr style="border-color: var(--border-glow); margin: 40px 0;">
 
 
-    <!-- Software & Apps Section -->
-    <section class="page-section" id="apps">
-    <h2 class="section-title">Softwares & Apps, Webs</h2>
-    <div class="apps-grid">
-      
-<!-- App 1 -->
-      <div class="app-card card-orange">
-        <div class="app-img-box">
-          <img src="typing.jpeg" alt="Type Master" onerror="this.src='https://placehold.co/70x70/ff6a00/ffffff?text=Code'">
-        </div>
-        <h3>Programming Code Type Master</h3>
-        <p>Enhance your coding typing speed with real programming syntax and live tests.</p>
-        <a href="https://programming-code-typingtest-pro.github.io/" target="_blank" class="visit-btn btn-orange">Visit App</a>
-      </div>
+    <!-- === SOFTWARES & WEBSITES SECTION === -->
+    <section class="page-section" id="webs" aria-label="HeRama Softwares Websites">
+      <h2 class="section-title">Softwares & Websites</h2>
+      <div class="apps-grid">
 
-      <!-- App 2 -->
-      <div class="app-card card-cyan">
-        <div class="app-img-box">
-          <img src="docs.jpeg" alt="Doc Converter" onerror="this.src='https://placehold.co/70x70/00f0ff/000000?text=Doc'">
-        </div>
-        <h3>Documents Converter</h3>
-        <p>Fast and secure tool to convert your documents into multiple formats instantly.</p>
-        <a href="https://panduranggarad922-cell.github.io" target="_blank" class="visit-btn btn-cyan">Visit App</a>
-      </div>
+        <!-- WEBSITE 1 : change only --card-color in HTML -->
+        <div class="app-card product-card scroll-reveal" style="--card-color:#ff6a00; --card-rgb:255,106,0;">
 
-      <!-- App 3 -->
-      <div class="app-card card-pink">
-        <div class="app-img-box">
-          <img src="img.jpeg" alt="Image Editor" onerror="this.src='https://placehold.co/70x70/ff007c/ffffff?text=IMG'">
+          <div class="app-img-box app-icon-placeholder">
+  <i class="fa-solid fa-keyboard"></i>
+</div>
+          <h3>Programming Code Type Master</h3>
+          <p>Enhance your coding typing speed with real programming syntax and live tests.</p>
+          <a href="https://programming-code-typingtest-pro.github.io/" target="_blank" rel="noopener" class="visit-btn">Visit Website</a>
         </div>
-        <h3>Image Editor Pro</h3>
-        <p>Advance image editing tool with rich filters, cropping, and effects.</p>
-        <a href="https://heramapsoftwares.github.io" target="_blank" class="visit-btn btn-pink">Visit App</a>
-      </div>
 
-      <!-- App 4 -->
-      <div class="app-card card-purple">
-        <div class="app-img-box">
-          <img src="audio.jpeg" alt="Video to MP3" onerror="this.src='https://placehold.co/70x70/9d00ff/ffffff?text=MP3'">
+        <!-- WEBSITE 2 -->
+        <div class="app-card product-card scroll-reveal" style="--card-color:#00f0ff; --card-rgb:0,240,255;">
+          <div class="app-img-box app-icon-placeholder">
+  <i class="fa-solid fa-file-lines"></i>
+</div>
+          <h3>Documents Converter</h3>
+          <p>Fast and secure tool to convert your documents into multiple formats instantly.</p>
+          <a href="https://panduranggarad922-cell.github.io" target="_blank" rel="noopener" class="visit-btn">Visit Website</a>
         </div>
-        <h3>Video to MP3 Converter</h3>
-        <p>Extract high-quality audio formats directly from your video files easily.</p>
-        <a href="https://heramapsoftwares.github.io" target="_blank" class="visit-btn btn-purple">Visit App</a>
-      </div>
 
-    </div>
+        <!-- WEBSITE 3 -->
+        <div class="app-card product-card scroll-reveal" style="--card-color:#ff007c; --card-rgb:255,0,124;">
+          <div class="app-img-box app-icon-placeholder">
+  <i class="fa-solid fa-image"></i>
+</div>
+          <h3>Image Editor Pro</h3>
+          <p>Advanced image editing tool with rich filters, cropping, and effects.</p>
+          <a href="https://heramapsoftwares.github.io" target="_blank" rel="noopener" class="visit-btn">Visit Website</a>
+        </div>
+
+        <!-- WEBSITE 4 -->
+        <div class="app-card product-card scroll-reveal" style="--card-color:#9d00ff; --card-rgb:157,0,255;">
+          <div class="app-img-box app-icon-placeholder">
+  <i class="fa-solid fa-file-audio"></i>
+</div>
+          <h3>Video to MP3 Converter</h3>
+          <p>Extract high-quality audio formats directly from your video files easily.</p>
+          <a href="https://heramapsoftwares.github.io" target="_blank" rel="noopener" class="visit-btn">Visit Website</a>
+        </div>
+
+      </div>
     </section>
 
+    <hr style="border-color: var(--border-glow); margin: 40px 0;">
+
+    <!-- === PLAY STORE APPS SECTION === -->
+    <section class="page-section" id="apps" aria-label="HeRama Softwares Play Store Apps">
+      <h2 class="section-title">Our Apps / Processing...</h2>
+      <p class="section-subtitle">Download our mobile apps from Google Play Store.</p>
+      <div class="apps-grid">
+
+        <!-- APP 1 : Varsha AI / SKIN -->
+        <div class="app-card product-card scroll-reveal app-featured" style="--card-color:#d8a06a; --card-rgb:216,160,106;">
+          <span class="app-featured-badge">ADVANCED</span>
+          <div class="app-img-box app-icon-placeholder"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3>Varsha AI</h3>
+          <p>AI-powered image enhancer for image beauty, cleanup, clarity, and a more beautiful look using an API.</p>
+          <a href="https://play.google.com/store/apps/" target="_blank" rel="noopener" class="visit-btn">Visit App</a>
+        </div>
+
+        <!-- APP 2 : Programming Code Type Master / RED -->
+        <div class="app-card product-card scroll-reveal" style="--card-color:#ff3b30; --card-rgb:255,59,48;">
+          <div class="app-img-box app-icon-placeholder"><i class="fa-solid fa-keyboard"></i></div>
+          <h3>Programming Code Type Master</h3>
+          <p>Typing practice for English and 40+ programming languages with programming functions for coding practice.</p>
+          <a href="https://play.google.com/store/apps/" target="_blank" rel="noopener" class="visit-btn">Visit App</a>
+        </div>
+
+        <!-- APP 3 : Image Editor / PURPLE -->
+        <div class="app-card product-card scroll-reveal" style="--card-color:#9d00ff; --card-rgb:157,0,255;">
+          <div class="app-img-box app-icon-placeholder"><i class="fa-solid fa-image"></i></div>
+          <h3>Image Editor</h3>
+          <p>Image editing app with a wide range of editing features and API-powered capabilities.</p>
+          <a href="https://play.google.com/store/apps/" target="_blank" rel="noopener" class="visit-btn">Visit App</a>
+        </div>
+
+        <!-- APP 4 : Video Sever / PINK -->
+        <div class="app-card product-card scroll-reveal" style="--card-color:#ff4fa3; --card-rgb:255,79,163;">
+          <div class="app-img-box app-icon-placeholder"><i class="fa-solid fa-video"></i></div>
+          <h3>Video Sever</h3>
+          <p>Save videos, stories, and status content in one convenient app.</p>
+          <a href="https://play.google.com/store/apps/" target="_blank" rel="noopener" class="visit-btn">Visit App</a>
+        </div>
+
+        <!-- APP 1 : PDF Converter / RED -->
+        <div class="app-card product-card scroll-reveal" style="--card-color:#ff3b30; --card-rgb:255,59,48;">
+          <div class="app-img-box app-icon-placeholder"><i class="fa-solid fa-file-pdf"></i></div>
+          <h3>PDF Converter</h3>
+          <p>PDF to Image and Image to PDF converter for quick document workflows.</p>
+          <!-- Replace the href value with this app's real Google Play Store URL. -->
+          <a href="https://play.google.com/store/apps/" target="_blank" rel="noopener" class="visit-btn">Visit App</a>
+        </div>
+
+        <!-- APP 2 : Excel Converter / GREEN -->
+        <div class="app-card product-card scroll-reveal" style="--card-color:#00c853; --card-rgb:0,200,83;">
+          <div class="app-img-box app-icon-placeholder"><i class="fa-solid fa-file-excel"></i></div>
+          <h3>Excel Converter</h3>
+          <p>Excel to PDF, PDF to Excel and Image to Excel conversion tools.</p>
+          <!-- Replace the href value with this app's real Google Play Store URL. -->
+          <a href="https://play.google.com/store/apps/" target="_blank" rel="noopener" class="visit-btn">Visit App</a>
+        </div>
+
+        <!-- APP 3 : PPT Converter / ORANGE -->
+        <div class="app-card product-card scroll-reveal" style="--card-color:#ff8c00; --card-rgb:255,140,0;">
+          <div class="app-img-box app-icon-placeholder"><i class="fa-solid fa-file-powerpoint"></i></div>
+          <h3>PPT Converter</h3>
+          <p>PPT to PDF, PDF to PPT and Image to PPT conversion tools.</p>
+          <!-- Replace the href value with this app's real Google Play Store URL. -->
+          <a href="https://play.google.com/store/apps/" target="_blank" rel="noopener" class="visit-btn">Visit App</a>
+        </div>
+
+        <!-- APP 4 : Word Converter / BLUE -->
+        <div class="app-card product-card scroll-reveal" style="--card-color:#1683ff; --card-rgb:22,131,255;">
+          <div class="app-img-box app-icon-placeholder"><i class="fa-solid fa-file-word"></i></div>
+          <h3>Word Converter</h3>
+          <p>Word to PDF, PDF to Word and Image to Word conversion tools.</p>
+          <!-- Replace the href value with this app's real Google Play Store URL. -->
+          <a href="https://play.google.com/store/apps/" target="_blank" rel="noopener" class="visit-btn">Visit App</a>
+        </div>
+
+      </div>
+    </section>
         <hr style="border-color: var(--border-glow); margin: 40px 0;">
 
 
@@ -272,8 +354,6 @@
     </div>
     </section>
 
-
-
   </div>
 
       <!-- PREMIUM GLASSY SCROLLABLE FOOTER -->
@@ -292,7 +372,6 @@
     <div class="footer-copyright">
       © 2026 <span class="footer-brand">HeRama</span>. All Rights Reserved.
     </div>
-  </div>
 
 
 
@@ -303,8 +382,10 @@
       '.profile-card',
       '.company-info-card',
       '.team-glass-box',
+      '.team-owner',
       '.team-member',
       '.app-card',
+      '.product-card',
       '.social-btn'
     ];
 
