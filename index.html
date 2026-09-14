@@ -418,5 +418,38 @@
   });
 </script>
 
+    <script>
+  // Tracker app se aane par Auto-Press Button aur Smooth Scroll karne ka logic
+  window.addEventListener('DOMContentLoaded', () => {
+    const hash = window.location.hash; // e.g. #team, #apps, #webs
+    if (!hash) return;
+
+    setTimeout(() => {
+      // 1. Website ke andar us section nav button ko dhundo
+      const matchingBtn = document.querySelector(`.section-nav a[href="${hash}"]`);
+      if (matchingBtn) {
+        // Auto-press button effect (Glow & Scale animation)
+        matchingBtn.style.transition = 'all 0.3s ease';
+        matchingBtn.style.boxShadow = '0 0 25px #00f0ff, inset 0 0 12px #00f0ff';
+        matchingBtn.style.borderColor = '#00f0ff';
+        matchingBtn.style.transform = 'scale(1.08)';
+
+        setTimeout(() => {
+          matchingBtn.style.transform = 'scale(1)';
+        }, 600);
+      }
+
+      // 2. Us section ko screen par smooth scroll karke center me laye
+      const targetSection = document.querySelector(hash);
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }, 450); // 450ms delay taaki page completely load ho sake
+  });
+</script>
+    
 </body>
 </html>
