@@ -65,6 +65,16 @@
 </head>
 <body>
 
+<!-- Top Advanced Status Navbar -->
+  <div class="top-status-nav">
+    <div class="ai-status-container" id="aiStatusContainer">
+      <div class="gemini-dots">
+        <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+      </div>
+      <div class="typewriter-text" id="typewriterText">Building advanced AI apps...|</div>
+    </div>
+  </div>
+
   <!-- Floating Orbs & Watermark Background -->
   <div class="bg-orb orb-1"></div>
   <div class="bg-orb orb-2"></div>
@@ -150,7 +160,7 @@
           <!-- TEAM MEMBER 2 -->
           <article class="team-member team-reveal">
             <div class="team-photo"><img src="female.jpeg" alt="Team Member 2"></div>
-            <h3>Gayatri Shreevastav</h3>
+            <h3>Rashi Shreevastav</h3>
             <span class="team-role">UI/UX Designer</span>
             <p>Creating modern, user-friendly interfaces and intuitive digital experiences.</p>
           </article>
@@ -183,6 +193,18 @@
     <section class="page-section" id="webs" aria-label="HeRama Softwares Websites">
       <h2 class="section-title">Softwares & Websites</h2>
       <div class="apps-grid">
+
+        <!-- NAYA API BOX: Varsha AI API (Premium Gold Glow) -->
+        <div class="app-card product-card scroll-reveal power-shine" style="--card-color:#ffd700; --card-rgb:255,215,0;">
+          <span class="app-featured-badge" style="background: rgba(255,215,0,0.2); border-color: #ffd700; color: #fff;">POWERFUL API</span>
+          <div class="app-img-box app-icon-placeholder">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <h3>Varsha AI API</h3>
+          <p>Cloud-hosted deep learning pipeline for face restoration, deblurring, and image beautification.</p>
+          <a href="https://panduranggarad922--varsha-ai-aibeautyapi-web.us-east.modal.run/docs?utm_source=chatgpt.com#/default/beautify_api_v1_beautify_post" target="_blank" rel="noopener" class="visit-btn" style="background: linear-gradient(90deg, #ffd700, #ff8c00); box-shadow: 0 5px 15px rgba(255,215,0,0.4); color: #000;">Explore API</a>
+        </div>
+
 
         <!-- WEBSITE 1 : change only --card-color in HTML -->
         <div class="app-card product-card scroll-reveal" style="--card-color:#ff6a00; --card-rgb:255,106,0;">
@@ -237,13 +259,15 @@
       <div class="apps-grid">
 
         <!-- APP 1 : Varsha AI / SKIN -->
-        <div class="app-card product-card scroll-reveal app-featured" style="--card-color:#d8a06a; --card-rgb:216,160,106;">
+        <!-- Yahan app-featured ke aage power-shine class add ki hai -->
+        <div class="app-card product-card scroll-reveal app-featured power-shine" style="--card-color:#d8a06a; --card-rgb:216,160,106;">
           <span class="app-featured-badge">ADVANCED</span>
           <div class="app-img-box app-icon-placeholder"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-          <h3>V API AI</h3>
+          <h3>Varsha AI</h3>
           <p>AI-powered image enhancer for image beauty, cleanup, clarity, and a more beautiful look using an API.</p>
           <a href="https://play.google.com/store/apps/" target="_blank" rel="noopener" class="visit-btn">Visit App</a>
         </div>
+
 
         <!-- APP 2 : Programming Code Type Master / RED -->
         <div class="app-card product-card scroll-reveal" style="--card-color:#ff3b30; --card-rgb:255,59,48;">
@@ -342,9 +366,9 @@
       </a>
 
       <!-- WhatsApp Chat -->
-      <a href="https://whatsapp.com/channel/0029VbDOUvfIt5rsgJwoov05" class="social-btn wa">
+      <!-- <a href="#" class="social-btn wa">
         <i class="fa-brands fa-whatsapp"></i> WhatsApp Chat
-      </a>
+      </a> -->
 
       <!-- Email -->
       <a href="mailto:heramasoftwares@gmail.com" class="social-btn email">
@@ -360,18 +384,22 @@
   <div class="bottom-footer">
     <div class="footer-links">
       <!-- In # ki jagah aap apna GitHub ya Chrome ka link daal sakte hain -->
-      <a href="privacy.html" target="_blank">Privacy</a>
+      <a href="https://panduranggarad922-cell.github.io/privacy.html" target="_blank">Privacy</a>
       <span class="footer-dot">•</span>
-      <a href="terms.html" target="_blank">Terms</a>
+      <a href="https://panduranggarad922-cell.github.io/policy.html" target="_blank">Policy</a>
       <span class="footer-dot">•</span>
-      <a href="contact.html" target="_blank">Contact</a>
+      <a href="https://programming-code-typingtest-pro.github.io/contact.html" target="_blank">Contact</a>
       <span class="footer-dot">•</span>
-      <a href="index.html" target="_blank">About</a>
+      <a href="https://panduranggarad922-cell.github.io/about.html" target="_blank">About</a>
     </div>
     
     <div class="footer-copyright">
       © 2026 <span class="footer-brand">HeRama</span>. All Rights Reserved.
+      
     </div>
+    </div>
+
+
 
 
 
@@ -418,7 +446,7 @@
   });
 </script>
 
-    <script>
+<script>
   // Tracker app se aane par Auto-Press Button aur Smooth Scroll karne ka logic
   window.addEventListener('DOMContentLoaded', () => {
     const hash = window.location.hash; // e.g. #team, #apps, #webs
@@ -450,6 +478,77 @@
     }, 450); // 450ms delay taaki page completely load ho sake
   });
 </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Tumhari company ki 5 advanced lines
+    let messages = [
+      "Building advanced AI apps...",
+      "Integrating smart APIs...",
+      "Developing next-gen web platforms...",
+      "Processing cloud data securely...",
+      "Creating custom digital solutions..."
+    ];
     
+    let msgIdx = 0, charIdx = 0, isDeleting = false, typeTimer;
+    const typeTarget = document.getElementById('typewriterText');
+    
+    if (typeTarget) {
+      function typeEffect() {
+        const currentMsg = messages[msgIdx];
+        if (isDeleting) {
+          typeTarget.innerText = currentMsg.substring(0, charIdx - 1) + '|';
+          charIdx--;
+          if (charIdx === 0) {
+            isDeleting = false;
+            msgIdx = (msgIdx + 1) % messages.length;
+            typeTimer = setTimeout(typeEffect, 300);
+          } else {
+            typeTimer = setTimeout(typeEffect, 15); // Delete speed
+          }
+        } else {
+          typeTarget.innerText = currentMsg.substring(0, charIdx + 1) + '|';
+          charIdx++;
+          if (charIdx === currentMsg.length) {
+            isDeleting = true;
+            typeTimer = setTimeout(typeEffect, 1500); // Pura sentence type hone ke baad ka wait time
+          } else {
+            typeTimer = setTimeout(typeEffect, 40); // Type karne ki speed
+          }
+        }
+      }
+      typeEffect();
+    }
+  });
+</script>
+
+<script>
+  // Scroll karte waqt auto-button highlight logic
+  document.addEventListener('DOMContentLoaded', () => {
+    // Sabhi sections aur unke nav buttons ko select karna
+    const sections = document.querySelectorAll('section.page-section');
+    const navLinks = document.querySelectorAll('.section-nav a');
+
+    window.addEventListener('scroll', () => {
+      let currentSection = '';
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        // 180px ka offset diya hai taaki section thoda sa upar aate hi button glow karne lage
+        if (window.scrollY >= sectionTop - 180) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+
+      // Sabhi buttons se active class hata kar sirf current wale par lagana
+      navLinks.forEach(link => {
+        link.classList.remove('active-btn');
+        if (currentSection && link.getAttribute('href') === `#${currentSection}`) {
+          link.classList.add('active-btn');
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>
